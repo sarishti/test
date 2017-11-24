@@ -1,0 +1,1750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C20A08CE6DA358C8B7A2A83 /* Pods_StayDream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B8C49274217517D03AAE /* Pods_StayDream.framework */; };
+		5A058C951F878C450047D229 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A058C971F878C450047D229 /* Localizable.strings */; };
+		5A058C9D1F87A0230047D229 /* FontConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A058C9B1F87A0220047D229 /* FontConstant.swift */; };
+		5A2560B21FBC78A300DDBC45 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2560B11FBC78A200DDBC45 /* User.swift */; };
+		5A2560B41FBC7CCF00DDBC45 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2560B31FBC7CCF00DDBC45 /* UserModel.swift */; };
+		5A2560B61FBC7EE700DDBC45 /* UserUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2560B51FBC7EE700DDBC45 /* UserUtility.swift */; };
+		5A298E0A1F9F266C002CC583 /* TextFieldLeftImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A298E091F9F266C002CC583 /* TextFieldLeftImage.swift */; };
+		5A298E0C1F9F60C0002CC583 /* SignUpVerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A298E0B1F9F60C0002CC583 /* SignUpVerifyViewController.swift */; };
+		5A298E0E1F9F64FE002CC583 /* SignUpPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A298E0D1F9F64FE002CC583 /* SignUpPasswordViewController.swift */; };
+		5A298E101F9F651A002CC583 /* MemberInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A298E0F1F9F651A002CC583 /* MemberInfoViewController.swift */; };
+		5A2C12BD1F866AD500D395FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C12BC1F866AD500D395FD /* ViewController.swift */; };
+		5A2C12C01F866AD500D395FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2C12BE1F866AD500D395FD /* Main.storyboard */; };
+		5A2C12C51F866AD500D395FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2C12C31F866AD500D395FD /* LaunchScreen.storyboard */; };
+		5A2C12FB1F866BC000D395FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A2C12E91F866BBF00D395FD /* Assets.xcassets */; };
+		5A2C12FC1F866BC000D395FD /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A2C12EA1F866BBF00D395FD /* Configuration.plist */; };
+		5A2C12FD1F866BC000D395FD /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C12EC1F866BBF00D395FD /* AppUtility.swift */; };
+		5A2C12FF1F866BC000D395FD /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C12EE1F866BBF00D395FD /* Enums.swift */; };
+		5A2C13001F866BC000D395FD /* ServiceUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C12EF1F866BBF00D395FD /* ServiceUtility.swift */; };
+		5A2C13021F866BDE00D395FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C13011F866BDE00D395FD /* AppDelegate.swift */; };
+		5A2C131F1F866CF100D395FD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C13161F866CF100D395FD /* Extensions.swift */; };
+		5A2C13201F866CF100D395FD /* NSAttributedStringConcatenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C13171F866CF100D395FD /* NSAttributedStringConcatenation.swift */; };
+		5A2C13211F866CF100D395FD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C13181F866CF100D395FD /* StringExtension.swift */; };
+		5A2C13221F866CF100D395FD /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C13191F866CF100D395FD /* UITextField+Extension.swift */; };
+		5A2C13231F866CF100D395FD /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C131A1F866CF100D395FD /* ViewControllerExtension.swift */; };
+		5A2C13241F866CF100D395FD /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C131C1F866CF100D395FD /* AppConstants.swift */; };
+		5A30C15F1FC577F200BDB339 /* PropertyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A30C15E1FC577F200BDB339 /* PropertyDetailViewController.swift */; };
+		5A31EF321FB3193E000F662B /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5A31EF311FB3193B000F662B /* .swiftlint.yml */; };
+		5A31EF331FB31942000F662B /* run-sonar-swift.sh in Resources */ = {isa = PBXBuildFile; fileRef = 5AD4437F1F9742B000D4EF46 /* run-sonar-swift.sh */; };
+		5A31EF341FB31944000F662B /* sonar-project.properties in Resources */ = {isa = PBXBuildFile; fileRef = 5AD443801F9742B700D4EF46 /* sonar-project.properties */; };
+		5A364E031FB08B21000A6731 /* SelectDatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A364E021FB08B21000A6731 /* SelectDatesViewController.swift */; };
+		5A364E051FB0A422000A6731 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A364E041FB0A422000A6731 /* Date.swift */; };
+		5A3790F81FC821A8004F826E /* DateConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3790F71FC821A8004F826E /* DateConfirmationViewController.swift */; };
+		5A3790FA1FC821C6004F826E /* BookingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3790F91FC821C6004F826E /* BookingDetailViewController.swift */; };
+		5A3B284B1F874AEA00ABFF14 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B28461F874AEA00ABFF14 /* Toast.swift */; };
+		5A3B284C1F874AEA00ABFF14 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B28481F874AEA00ABFF14 /* KeychainItemAccessibility.swift */; };
+		5A3B284D1F874AEA00ABFF14 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B28491F874AEA00ABFF14 /* KeychainWrapper.swift */; };
+		5A3B28511F874B2900ABFF14 /* NSIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B28501F874B2900ABFF14 /* NSIError.swift */; };
+		5A4614D31FAB3A11005A71F0 /* SearchLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4614D11FAB3A11005A71F0 /* SearchLocationTableViewCell.swift */; };
+		5A4614D41FAB3A11005A71F0 /* SearchLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4614D21FAB3A11005A71F0 /* SearchLocationViewController.swift */; };
+		5A48B5EB1FA9F38900B256B4 /* FunctionalUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48B5EA1FA9F38800B256B4 /* FunctionalUtility.swift */; };
+		5A48B5FB1FAA002600B256B4 /* DGElasticPullToRefreshExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48B5F01FAA002600B256B4 /* DGElasticPullToRefreshExtensions.swift */; };
+		5A48B5FC1FAA002600B256B4 /* DGElasticPullToRefreshLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48B5F11FAA002600B256B4 /* DGElasticPullToRefreshLoadingView.swift */; };
+		5A48B5FD1FAA002600B256B4 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48B5F21FAA002600B256B4 /* DGElasticPullToRefreshLoadingViewCircle.swift */; };
+		5A48B5FE1FAA002600B256B4 /* DGElasticPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48B5F31FAA002600B256B4 /* DGElasticPullToRefreshView.swift */; };
+		5A48B5FF1FAA002600B256B4 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48B5F61FAA002600B256B4 /* Extension.swift */; };
+		5A48B6001FAA002600B256B4 /* pulltorefresharrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A48B5F71FAA002600B256B4 /* pulltorefresharrow.png */; };
+		5A48B6011FAA002600B256B4 /* PullToRefreshOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48B5F81FAA002600B256B4 /* PullToRefreshOption.swift */; };
+		5A48B6021FAA002600B256B4 /* PullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48B5F91FAA002600B256B4 /* PullToRefreshView.swift */; };
+		5A48B6031FAA002600B256B4 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48B5FA1FAA002600B256B4 /* UIScrollViewExtension.swift */; };
+		5A48B6051FAA005A00B256B4 /* ImageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48B6041FAA005A00B256B4 /* ImageUtility.swift */; };
+		5A509C881F9E10AF00F0DD3F /* LoginOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A509C871F9E10AF00F0DD3F /* LoginOptionViewController.swift */; };
+		5A50B7191FBDD61200E2BCAC /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50B7181FBDD61200E2BCAC /* ChangePasswordViewController.swift */; };
+		5A53B3401FA6FCB700DACF61 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A53B33F1FA6FCB700DACF61 /* ForgotPasswordViewController.swift */; };
+		5A53B3431FA733AC00DACF61 /* TermsOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A53B3421FA733AC00DACF61 /* TermsOfServiceViewController.swift */; };
+		5A53B3791FA76C1F00DACF61 /* AlamofireCached.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A53B36F1FA76C1F00DACF61 /* AlamofireCached.swift */; };
+		5A53B37A1FA76C1F00DACF61 /* AlamofireResponseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A53B3701FA76C1F00DACF61 /* AlamofireResponseWrapper.swift */; };
+		5A53B37B1FA76C1F00DACF61 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A53B3711FA76C1F00DACF61 /* RequestBuilder.swift */; };
+		5A53B37C1FA76C1F00DACF61 /* AlamofireExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A53B3721FA76C1F00DACF61 /* AlamofireExtensions.swift */; };
+		5A53B37D1FA76C1F00DACF61 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A53B3731FA76C1F00DACF61 /* APIHelper.swift */; };
+		5A53B37E1FA76C1F00DACF61 /* AccessTokenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A53B3751FA76C1F00DACF61 /* AccessTokenAPI.swift */; };
+		5A53B37F1FA76C1F00DACF61 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A53B3771FA76C1F00DACF61 /* UserAPI.swift */; };
+		5A53B3801FA76C1F00DACF61 /* NSIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A53B3781FA76C1F00DACF61 /* NSIResponse.swift */; };
+		5A6522591FA86261004BE23E /* SearchCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6522581FA86261004BE23E /* SearchCellTableViewCell.swift */; };
+		5A65225B1FA884CD004BE23E /* PropertyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A65225A1FA884CD004BE23E /* PropertyAPI.swift */; };
+		5A65225D1FA884E3004BE23E /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A65225C1FA884E2004BE23E /* Property.swift */; };
+		5A65225F1FA884EA004BE23E /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A65225E1FA884EA004BE23E /* PropertyList.swift */; };
+		5A6522611FA884EE004BE23E /* StaticPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6522601FA884EE004BE23E /* StaticPage.swift */; };
+		5A7C0EEB1FAC4A6700C16536 /* GoogleAutocompleteJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C0EEA1FAC4A6700C16536 /* GoogleAutocompleteJsonModel.swift */; };
+		5A7C0EED1FAC4AA200C16536 /* GooglePlacesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C0EEC1FAC4AA200C16536 /* GooglePlacesAPI.swift */; };
+		5A7C0EEF1FAC4B0200C16536 /* GoogleAPIArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C0EEE1FAC4B0200C16536 /* GoogleAPIArrayExtension.swift */; };
+		5A80B8821FBD6A100066DFAB /* SearchView+TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80B8811FBD6A0F0066DFAB /* SearchView+TableViewExtension.swift */; };
+		5A817EBD1FC6B513005D6E3B /* Amenities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A817EBC1FC6B513005D6E3B /* Amenities.plist */; };
+		5A817EC01FC6E33C005D6E3B /* AmenitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A817EBF1FC6E33C005D6E3B /* AmenitiesCollectionViewCell.swift */; };
+		5A817EC31FC6E62D005D6E3B /* AmenitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A817EC21FC6E62D005D6E3B /* AmenitiesTableViewCell.swift */; };
+		5A817EC51FC6E645005D6E3B /* AmenitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A817EC41FC6E645005D6E3B /* AmenitiesViewController.swift */; };
+		5A85046F1FA0B9660036BB9E /* EmailToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A85046E1FA0B9660036BB9E /* EmailToken.swift */; };
+		5A8504731FA0BE000036BB9E /* AccessTokenModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8504721FA0BE000036BB9E /* AccessTokenModal.swift */; };
+		5A86A5111FA35F260056C3E9 /* Property.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A86A50F1FA35F250056C3E9 /* Property.storyboard */; };
+		5A86B5C81FC406E30082A8F8 /* DIYCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86B5C71FC406E20082A8F8 /* DIYCalendarCell.swift */; };
+		5A8BDF4B1FA8C740006EE115 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8BDF4A1FA8BD64006EE115 /* LocationService.swift */; };
+		5A8BDF4D1FA8D2AC006EE115 /* PropertyListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8BDF4C1FA8D2AC006EE115 /* PropertyListing.swift */; };
+		5A8C9A191FBF2C0900F76901 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C9A181FBF2C0800F76901 /* Password.swift */; };
+		5A99AD821FAAE81300D8B99F /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A99AD811FAAE81300D8B99F /* CustomTabBarController.swift */; };
+		5AAE95D01FC70B6C0057B6AA /* PropertyDetail+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE95CF1FC70B6C0057B6AA /* PropertyDetail+Extension.swift */; };
+		5AD443741F97248000D4EF46 /* StayDreamConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD443731F97248000D4EF46 /* StayDreamConfiguration.swift */; };
+		5AD4437A1F973CDF00D4EF46 /* georgia_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AD443771F973C6900D4EF46 /* georgia_0.ttf */; };
+		5AD4437B1F973CDF00D4EF46 /* tahoma_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AD443791F973C6A00D4EF46 /* tahoma_0.ttf */; };
+		5AD4437C1F973CDF00D4EF46 /* tahoma_1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AD443761F973C6900D4EF46 /* tahoma_1.ttf */; };
+		5AD4437D1F973CDF00D4EF46 /* tahomabd_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AD443751F973C6900D4EF46 /* tahomabd_0.ttf */; };
+		5AD4437E1F973CDF00D4EF46 /* tahomabd_1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AD443781F973C6900D4EF46 /* tahomabd_1.ttf */; };
+		5AD4B65A1FA19F8700BF8BC9 /* image_loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5A8504741FA0D2860036BB9E /* image_loader.gif */; };
+		5AD4B65E1FA1A31900BF8BC9 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4B65D1FA1A31900BF8BC9 /* UIImage+animatedGIF.m */; };
+		5AD4B6601FA1A33400BF8BC9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD4B65F1FA1A33400BF8BC9 /* ImageIO.framework */; };
+		5AE8D4D01FA3847D0026D452 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE8D4CF1FA3847D0026D452 /* HistoryViewController.swift */; };
+		5AE8D4D21FA3848F0026D452 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE8D4D11FA3848F0026D452 /* ProfileViewController.swift */; };
+		5AE8D4D41FA384A40026D452 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE8D4D31FA384A40026D452 /* SearchViewController.swift */; };
+		5AF6013B1F9DCD24003B67F5 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6013A1F9DCD24003B67F5 /* LaunchViewController.swift */; };
+		5AF6013D1F9DCD34003B67F5 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6013C1F9DCD34003B67F5 /* LanguageViewController.swift */; };
+		5AF6013F1F9DCD42003B67F5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6013E1F9DCD42003B67F5 /* LoginViewController.swift */; };
+		5AF601411F9DCD62003B67F5 /* SignUpEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF601401F9DCD62003B67F5 /* SignUpEmailViewController.swift */; };
+		5AF601431F9DE28F003B67F5 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF601421F9DE28F003B67F5 /* LanguageTableViewCell.swift */; };
+		5AF8F0351F95D88B00A22C05 /* StoryboardConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF8F0341F95D88B00A22C05 /* StoryboardConstant.swift */; };
+		6565FF7D5C29294644755A30 /* Pods_StayDreamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE45340920B08B0BAFCD97D4 /* Pods_StayDreamTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A2C12CC1F866AD500D395FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A2C12AF1F866AD500D395FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A2C12B61F866AD500D395FD;
+			remoteInfo = DVH;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02AC9E78ABFB3E600CFB6E96 /* Pods-StayDreamTests.qc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StayDreamTests.qc.xcconfig"; path = "Pods/Target Support Files/Pods-StayDreamTests/Pods-StayDreamTests.qc.xcconfig"; sourceTree = "<group>"; };
+		04D00DDBCF6D8F290C3310B6 /* Pods-StayDreamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StayDreamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StayDreamTests/Pods-StayDreamTests.debug.xcconfig"; sourceTree = "<group>"; };
+		16305B0B030FCC86F7B3D1A2 /* Pods-StayDreamTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StayDreamTests.development.xcconfig"; path = "Pods/Target Support Files/Pods-StayDreamTests/Pods-StayDreamTests.development.xcconfig"; sourceTree = "<group>"; };
+		1DB9999BA40060E84BB3F840 /* Pods-StayDream.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StayDream.development.xcconfig"; path = "Pods/Target Support Files/Pods-StayDream/Pods-StayDream.development.xcconfig"; sourceTree = "<group>"; };
+		48C75143D192C3EF81B4BCD4 /* Pods-StayDream.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StayDream.production.xcconfig"; path = "Pods/Target Support Files/Pods-StayDream/Pods-StayDream.production.xcconfig"; sourceTree = "<group>"; };
+		5A058C8F1F8789D20047D229 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5A058C961F878C450047D229 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A058C981F878C490047D229 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A058C9B1F87A0220047D229 /* FontConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontConstant.swift; sourceTree = "<group>"; };
+		5A058CA41F87AF6E0047D229 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		5A058CA61F87AF700047D229 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		5A2560B11FBC78A200DDBC45 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5A2560B31FBC7CCF00DDBC45 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		5A2560B51FBC7EE700DDBC45 /* UserUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUtility.swift; sourceTree = "<group>"; };
+		5A298E091F9F266C002CC583 /* TextFieldLeftImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldLeftImage.swift; sourceTree = "<group>"; };
+		5A298E0B1F9F60C0002CC583 /* SignUpVerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVerifyViewController.swift; sourceTree = "<group>"; };
+		5A298E0D1F9F64FE002CC583 /* SignUpPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordViewController.swift; sourceTree = "<group>"; };
+		5A298E0F1F9F651A002CC583 /* MemberInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberInfoViewController.swift; sourceTree = "<group>"; };
+		5A2C12B71F866AD500D395FD /* StayDream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StayDream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A2C12BC1F866AD500D395FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A2C12BF1F866AD500D395FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A2C12C41F866AD500D395FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A2C12C61F866AD500D395FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A2C12CB1F866AD500D395FD /* StayDreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StayDreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A2C12CF1F866AD500D395FD /* DVHTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVHTests.swift; sourceTree = "<group>"; };
+		5A2C12D11F866AD500D395FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A2C12E91F866BBF00D395FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A2C12EA1F866BBF00D395FD /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		5A2C12EC1F866BBF00D395FD /* AppUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		5A2C12EE1F866BBF00D395FD /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		5A2C12EF1F866BBF00D395FD /* ServiceUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceUtility.swift; sourceTree = "<group>"; };
+		5A2C13011F866BDE00D395FD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A2C13161F866CF100D395FD /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5A2C13171F866CF100D395FD /* NSAttributedStringConcatenation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringConcatenation.swift; sourceTree = "<group>"; };
+		5A2C13181F866CF100D395FD /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		5A2C13191F866CF100D395FD /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		5A2C131A1F866CF100D395FD /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		5A2C131C1F866CF100D395FD /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		5A30C15E1FC577F200BDB339 /* PropertyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailViewController.swift; sourceTree = "<group>"; };
+		5A31EF311FB3193B000F662B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		5A364E021FB08B21000A6731 /* SelectDatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDatesViewController.swift; sourceTree = "<group>"; };
+		5A364E041FB0A422000A6731 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		5A3790F71FC821A8004F826E /* DateConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConfirmationViewController.swift; sourceTree = "<group>"; };
+		5A3790F91FC821C6004F826E /* BookingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailViewController.swift; sourceTree = "<group>"; };
+		5A3B28461F874AEA00ABFF14 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		5A3B28481F874AEA00ABFF14 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		5A3B28491F874AEA00ABFF14 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		5A3B284A1F874AEA00ABFF14 /* SwiftKeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftKeychainWrapper.h; sourceTree = "<group>"; };
+		5A3B28501F874B2900ABFF14 /* NSIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSIError.swift; sourceTree = "<group>"; };
+		5A4614D11FAB3A11005A71F0 /* SearchLocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLocationTableViewCell.swift; sourceTree = "<group>"; };
+		5A4614D21FAB3A11005A71F0 /* SearchLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLocationViewController.swift; sourceTree = "<group>"; };
+		5A48B5EA1FA9F38800B256B4 /* FunctionalUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalUtility.swift; sourceTree = "<group>"; };
+		5A48B5ED1FA9FFCD00B256B4 /* AWSCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSCameraController.swift; sourceTree = "<group>"; };
+		5A48B5F01FAA002600B256B4 /* DGElasticPullToRefreshExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshExtensions.swift; sourceTree = "<group>"; };
+		5A48B5F11FAA002600B256B4 /* DGElasticPullToRefreshLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingView.swift; sourceTree = "<group>"; };
+		5A48B5F21FAA002600B256B4 /* DGElasticPullToRefreshLoadingViewCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingViewCircle.swift; sourceTree = "<group>"; };
+		5A48B5F31FAA002600B256B4 /* DGElasticPullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshView.swift; sourceTree = "<group>"; };
+		5A48B5F61FAA002600B256B4 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		5A48B5F71FAA002600B256B4 /* pulltorefresharrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pulltorefresharrow.png; sourceTree = "<group>"; };
+		5A48B5F81FAA002600B256B4 /* PullToRefreshOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshOption.swift; sourceTree = "<group>"; };
+		5A48B5F91FAA002600B256B4 /* PullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshView.swift; sourceTree = "<group>"; };
+		5A48B5FA1FAA002600B256B4 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		5A48B6041FAA005A00B256B4 /* ImageUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtility.swift; sourceTree = "<group>"; };
+		5A509C861F9E07DF00F0DD3F /* TAHOMAB0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = TAHOMAB0.TTF; sourceTree = "<group>"; };
+		5A509C871F9E10AF00F0DD3F /* LoginOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionViewController.swift; sourceTree = "<group>"; };
+		5A50B7181FBDD61200E2BCAC /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		5A53B33F1FA6FCB700DACF61 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		5A53B3421FA733AC00DACF61 /* TermsOfServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceViewController.swift; sourceTree = "<group>"; };
+		5A53B36F1FA76C1F00DACF61 /* AlamofireCached.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireCached.swift; sourceTree = "<group>"; };
+		5A53B3701FA76C1F00DACF61 /* AlamofireResponseWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireResponseWrapper.swift; sourceTree = "<group>"; };
+		5A53B3711FA76C1F00DACF61 /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		5A53B3721FA76C1F00DACF61 /* AlamofireExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireExtensions.swift; sourceTree = "<group>"; };
+		5A53B3731FA76C1F00DACF61 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		5A53B3751FA76C1F00DACF61 /* AccessTokenAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenAPI.swift; sourceTree = "<group>"; };
+		5A53B3771FA76C1F00DACF61 /* UserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		5A53B3781FA76C1F00DACF61 /* NSIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSIResponse.swift; sourceTree = "<group>"; };
+		5A6522581FA86261004BE23E /* SearchCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellTableViewCell.swift; sourceTree = "<group>"; };
+		5A65225A1FA884CD004BE23E /* PropertyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAPI.swift; sourceTree = "<group>"; };
+		5A65225C1FA884E2004BE23E /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		5A65225E1FA884EA004BE23E /* PropertyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyList.swift; sourceTree = "<group>"; };
+		5A6522601FA884EE004BE23E /* StaticPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticPage.swift; sourceTree = "<group>"; };
+		5A7C0EEA1FAC4A6700C16536 /* GoogleAutocompleteJsonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAutocompleteJsonModel.swift; sourceTree = "<group>"; };
+		5A7C0EEC1FAC4AA200C16536 /* GooglePlacesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlacesAPI.swift; sourceTree = "<group>"; };
+		5A7C0EEE1FAC4B0200C16536 /* GoogleAPIArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAPIArrayExtension.swift; sourceTree = "<group>"; };
+		5A80B8811FBD6A0F0066DFAB /* SearchView+TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchView+TableViewExtension.swift"; sourceTree = "<group>"; };
+		5A817EBC1FC6B513005D6E3B /* Amenities.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Amenities.plist; sourceTree = "<group>"; };
+		5A817EBF1FC6E33C005D6E3B /* AmenitiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenitiesCollectionViewCell.swift; sourceTree = "<group>"; };
+		5A817EC21FC6E62D005D6E3B /* AmenitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenitiesTableViewCell.swift; sourceTree = "<group>"; };
+		5A817EC41FC6E645005D6E3B /* AmenitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenitiesViewController.swift; sourceTree = "<group>"; };
+		5A85046E1FA0B9660036BB9E /* EmailToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailToken.swift; sourceTree = "<group>"; };
+		5A8504721FA0BE000036BB9E /* AccessTokenModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenModal.swift; sourceTree = "<group>"; };
+		5A8504741FA0D2860036BB9E /* image_loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image_loader.gif; sourceTree = "<group>"; };
+		5A86A5101FA35F250056C3E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Property.storyboard; sourceTree = "<group>"; };
+		5A86B5C71FC406E20082A8F8 /* DIYCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIYCalendarCell.swift; sourceTree = "<group>"; };
+		5A8BDF4A1FA8BD64006EE115 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		5A8BDF4C1FA8D2AC006EE115 /* PropertyListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListing.swift; sourceTree = "<group>"; };
+		5A8C9A181FBF2C0800F76901 /* Password.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
+		5A99AD811FAAE81300D8B99F /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		5AAE95CF1FC70B6C0057B6AA /* PropertyDetail+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PropertyDetail+Extension.swift"; sourceTree = "<group>"; };
+		5AD443731F97248000D4EF46 /* StayDreamConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StayDreamConfiguration.swift; sourceTree = "<group>"; };
+		5AD443751F973C6900D4EF46 /* tahomabd_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tahomabd_0.ttf; sourceTree = "<group>"; };
+		5AD443761F973C6900D4EF46 /* tahoma_1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tahoma_1.ttf; sourceTree = "<group>"; };
+		5AD443771F973C6900D4EF46 /* georgia_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = georgia_0.ttf; sourceTree = "<group>"; };
+		5AD443781F973C6900D4EF46 /* tahomabd_1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tahomabd_1.ttf; sourceTree = "<group>"; };
+		5AD443791F973C6A00D4EF46 /* tahoma_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tahoma_0.ttf; sourceTree = "<group>"; };
+		5AD4437F1F9742B000D4EF46 /* run-sonar-swift.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "run-sonar-swift.sh"; sourceTree = "<group>"; };
+		5AD443801F9742B700D4EF46 /* sonar-project.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "sonar-project.properties"; sourceTree = "<group>"; };
+		5AD4B65C1FA1A31900BF8BC9 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		5AD4B65D1FA1A31900BF8BC9 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		5AD4B65F1FA1A33400BF8BC9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		5AE8D4CF1FA3847D0026D452 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		5AE8D4D11FA3848F0026D452 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5AE8D4D31FA384A40026D452 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		5AF2DFD51F95E72C004BD005 /* StayDream_Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StayDream_Bridging_Header.h; sourceTree = "<group>"; };
+		5AF6013A1F9DCD24003B67F5 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		5AF6013C1F9DCD34003B67F5 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		5AF6013E1F9DCD42003B67F5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5AF601401F9DCD62003B67F5 /* SignUpEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailViewController.swift; sourceTree = "<group>"; };
+		5AF601421F9DE28F003B67F5 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
+		5AF8F0341F95D88B00A22C05 /* StoryboardConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardConstant.swift; sourceTree = "<group>"; };
+		75A6C21F4A2E32BD35FD3268 /* Pods-StayDream.qc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StayDream.qc.xcconfig"; path = "Pods/Target Support Files/Pods-StayDream/Pods-StayDream.qc.xcconfig"; sourceTree = "<group>"; };
+		B6D3B8C49274217517D03AAE /* Pods_StayDream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StayDream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE45340920B08B0BAFCD97D4 /* Pods_StayDreamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StayDreamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2288D9510CD9AAADA647835 /* Pods-StayDreamTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StayDreamTests.production.xcconfig"; path = "Pods/Target Support Files/Pods-StayDreamTests/Pods-StayDreamTests.production.xcconfig"; sourceTree = "<group>"; };
+		D6AE0050D37C77CFED2A063F /* Pods-StayDream.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StayDream.staging.xcconfig"; path = "Pods/Target Support Files/Pods-StayDream/Pods-StayDream.staging.xcconfig"; sourceTree = "<group>"; };
+		D74197A9BB22C2876DCA4739 /* Pods-StayDream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StayDream.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StayDream/Pods-StayDream.debug.xcconfig"; sourceTree = "<group>"; };
+		E810008085ECD19DD8FE1123 /* Pods-StayDreamTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StayDreamTests.staging.xcconfig"; path = "Pods/Target Support Files/Pods-StayDreamTests/Pods-StayDreamTests.staging.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A2C12B41F866AD500D395FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AD4B6601FA1A33400BF8BC9 /* ImageIO.framework in Frameworks */,
+				2C20A08CE6DA358C8B7A2A83 /* Pods_StayDream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A2C12C81F866AD500D395FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6565FF7D5C29294644755A30 /* Pods_StayDreamTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		203069D2D77A5FA3F5090FA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AD4B65F1FA1A33400BF8BC9 /* ImageIO.framework */,
+				B6D3B8C49274217517D03AAE /* Pods_StayDream.framework */,
+				BE45340920B08B0BAFCD97D4 /* Pods_StayDreamTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A298E081F9F264F002CC583 /* TextFieldLeftImage */ = {
+			isa = PBXGroup;
+			children = (
+				5A298E091F9F266C002CC583 /* TextFieldLeftImage.swift */,
+			);
+			path = TextFieldLeftImage;
+			sourceTree = "<group>";
+		};
+		5A2C12AE1F866AD500D395FD = {
+			isa = PBXGroup;
+			children = (
+				5A31EF311FB3193B000F662B /* .swiftlint.yml */,
+				5AD4437F1F9742B000D4EF46 /* run-sonar-swift.sh */,
+				5AD443801F9742B700D4EF46 /* sonar-project.properties */,
+				5A2C12B91F866AD500D395FD /* StayDream */,
+				5A2C12CE1F866AD500D395FD /* DVHTests */,
+				5A2C12B81F866AD500D395FD /* Products */,
+				A3DCA72CCEBBAEE4E80C1B1F /* Pods */,
+				203069D2D77A5FA3F5090FA8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5A2C12B81F866AD500D395FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A2C12B71F866AD500D395FD /* StayDream.app */,
+				5A2C12CB1F866AD500D395FD /* StayDreamTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A2C12B91F866AD500D395FD /* StayDream */ = {
+			isa = PBXGroup;
+			children = (
+				5A2C12DB1F866BBF00D395FD /* AppDelegate */,
+				5A2C12DA1F866BBF00D395FD /* ViewControllers */,
+				5A2C13271F866D8400D395FD /* Storyboards */,
+				5A2C12F21F866BC000D395FD /* Models */,
+				5A2C12F01F866BC000D395FD /* ReuseableControls */,
+				5A2C12EB1F866BBF00D395FD /* Utilities */,
+				5A2C12E81F866BBF00D395FD /* Resources */,
+				5A53B36D1FA76C1F00DACF61 /* WSLayer */,
+				5A53B3591FA7628B00DACF61 /* Singlton */,
+				5A2C131B1F866CF100D395FD /* Constants */,
+				5A2C13151F866CF100D395FD /* Extensions */,
+				5A2C12C61F866AD500D395FD /* Info.plist */,
+				5AF2DFD51F95E72C004BD005 /* StayDream_Bridging_Header.h */,
+			);
+			path = StayDream;
+			sourceTree = "<group>";
+		};
+		5A2C12CE1F866AD500D395FD /* DVHTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A2C12CF1F866AD500D395FD /* DVHTests.swift */,
+				5A2C12D11F866AD500D395FD /* Info.plist */,
+			);
+			path = DVHTests;
+			sourceTree = "<group>";
+		};
+		5A2C12DA1F866BBF00D395FD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A99AD801FAAE74E00D8B99F /* TabBarController */,
+				5A53B3411FA7339A00DACF61 /* TermsService */,
+				5A53B33E1FA6FCA400DACF61 /* ForgotPassword */,
+				5AE8D4CC1FA384660026D452 /* History */,
+				5AE8D4CD1FA384660026D452 /* Profile */,
+				5AE8D4CE1FA384670026D452 /* Search */,
+				5AF601361F9DCCF8003B67F5 /* Language */,
+				5AF601341F9DCCF8003B67F5 /* Launch */,
+				5AF601331F9DCCF8003B67F5 /* Login */,
+				5AF601351F9DCCF8003B67F5 /* SignUp */,
+				5A2C12BC1F866AD500D395FD /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5A2C12DB1F866BBF00D395FD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5A2C13011F866BDE00D395FD /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		5A2C12E81F866BBF00D395FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A8504741FA0D2860036BB9E /* image_loader.gif */,
+				5A3B28521F874CF700ABFF14 /* Fonts */,
+				5A2C12E91F866BBF00D395FD /* Assets.xcassets */,
+				5A2C12EA1F866BBF00D395FD /* Configuration.plist */,
+				5A058C971F878C450047D229 /* Localizable.strings */,
+				5A817EBC1FC6B513005D6E3B /* Amenities.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5A2C12EB1F866BBF00D395FD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5A48B6041FAA005A00B256B4 /* ImageUtility.swift */,
+				5AD4B65B1FA1A31900BF8BC9 /* LoaderCategory */,
+				5A2C12EC1F866BBF00D395FD /* AppUtility.swift */,
+				5A48B5EA1FA9F38800B256B4 /* FunctionalUtility.swift */,
+				5AD443731F97248000D4EF46 /* StayDreamConfiguration.swift */,
+				5A2C12EE1F866BBF00D395FD /* Enums.swift */,
+				5A2C12EF1F866BBF00D395FD /* ServiceUtility.swift */,
+				5A364E041FB0A422000A6731 /* Date.swift */,
+				5A2560B51FBC7EE700DDBC45 /* UserUtility.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5A2C12F01F866BC000D395FD /* ReuseableControls */ = {
+			isa = PBXGroup;
+			children = (
+				5A48B5EE1FAA002600B256B4 /* PullUpDownLibrary */,
+				5A48B5EC1FA9FFBA00B256B4 /* AWSUpload */,
+				5A298E081F9F264F002CC583 /* TextFieldLeftImage */,
+				5A3B28471F874AEA00ABFF14 /* KeyChainItemWrapper */,
+				5A3B28451F874AEA00ABFF14 /* Toast */,
+			);
+			path = ReuseableControls;
+			sourceTree = "<group>";
+		};
+		5A2C12F21F866BC000D395FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A8C9A171FBF2C0800F76901 /* User */,
+				5A7C0EE91FAC4A4900C16536 /* ReuseableModel */,
+				5A8BDF4C1FA8D2AC006EE115 /* PropertyListing.swift */,
+				5A65225E1FA884EA004BE23E /* PropertyList.swift */,
+				5A65225C1FA884E2004BE23E /* Property.swift */,
+				5A3B28501F874B2900ABFF14 /* NSIError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A2C13151F866CF100D395FD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A2C13161F866CF100D395FD /* Extensions.swift */,
+				5A2C13171F866CF100D395FD /* NSAttributedStringConcatenation.swift */,
+				5A2C13181F866CF100D395FD /* StringExtension.swift */,
+				5A2C13191F866CF100D395FD /* UITextField+Extension.swift */,
+				5A2C131A1F866CF100D395FD /* ViewControllerExtension.swift */,
+				5A7C0EEE1FAC4B0200C16536 /* GoogleAPIArrayExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5A2C131B1F866CF100D395FD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5AF8F0341F95D88B00A22C05 /* StoryboardConstant.swift */,
+				5A058C9B1F87A0220047D229 /* FontConstant.swift */,
+				5A2C131C1F866CF100D395FD /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		5A2C13271F866D8400D395FD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5A2C12C31F866AD500D395FD /* LaunchScreen.storyboard */,
+				5A2C12BE1F866AD500D395FD /* Main.storyboard */,
+				5A86A50F1FA35F250056C3E9 /* Property.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5A30C15D1FC577C100BDB339 /* PropertyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5A817EBE1FC6E270005D6E3B /* AmenitiesCell */,
+				5A30C15E1FC577F200BDB339 /* PropertyDetailViewController.swift */,
+				5AAE95CF1FC70B6C0057B6AA /* PropertyDetail+Extension.swift */,
+			);
+			path = PropertyDetail;
+			sourceTree = "<group>";
+		};
+		5A364E011FB08B09000A6731 /* CalenderDates */ = {
+			isa = PBXGroup;
+			children = (
+				5A86B5C71FC406E20082A8F8 /* DIYCalendarCell.swift */,
+				5A364E021FB08B21000A6731 /* SelectDatesViewController.swift */,
+			);
+			path = CalenderDates;
+			sourceTree = "<group>";
+		};
+		5A3790F41FC82193004F826E /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		5A3790F51FC82193004F826E /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				5A3790F91FC821C6004F826E /* BookingDetailViewController.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		5A3790F61FC82193004F826E /* DateConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				5A3790F71FC821A8004F826E /* DateConfirmationViewController.swift */,
+			);
+			path = DateConfirmation;
+			sourceTree = "<group>";
+		};
+		5A3B28451F874AEA00ABFF14 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				5A3B28461F874AEA00ABFF14 /* Toast.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		5A3B28471F874AEA00ABFF14 /* KeyChainItemWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				5A3B28481F874AEA00ABFF14 /* KeychainItemAccessibility.swift */,
+				5A3B28491F874AEA00ABFF14 /* KeychainWrapper.swift */,
+				5A3B284A1F874AEA00ABFF14 /* SwiftKeychainWrapper.h */,
+			);
+			path = KeyChainItemWrapper;
+			sourceTree = "<group>";
+		};
+		5A3B28521F874CF700ABFF14 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5A509C861F9E07DF00F0DD3F /* TAHOMAB0.TTF */,
+				5AD443771F973C6900D4EF46 /* georgia_0.ttf */,
+				5AD443791F973C6A00D4EF46 /* tahoma_0.ttf */,
+				5AD443761F973C6900D4EF46 /* tahoma_1.ttf */,
+				5AD443751F973C6900D4EF46 /* tahomabd_0.ttf */,
+				5AD443781F973C6900D4EF46 /* tahomabd_1.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5A4614D01FAB3A11005A71F0 /* SearchLocation */ = {
+			isa = PBXGroup;
+			children = (
+				5A4614D11FAB3A11005A71F0 /* SearchLocationTableViewCell.swift */,
+				5A4614D21FAB3A11005A71F0 /* SearchLocationViewController.swift */,
+			);
+			path = SearchLocation;
+			sourceTree = "<group>";
+		};
+		5A48B5EC1FA9FFBA00B256B4 /* AWSUpload */ = {
+			isa = PBXGroup;
+			children = (
+				5A48B5ED1FA9FFCD00B256B4 /* AWSCameraController.swift */,
+			);
+			path = AWSUpload;
+			sourceTree = "<group>";
+		};
+		5A48B5EE1FAA002600B256B4 /* PullUpDownLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				5A48B5EF1FAA002600B256B4 /* DGElasticPullToRefresh */,
+				5A48B5F41FAA002600B256B4 /* InfiniteScroller */,
+			);
+			path = PullUpDownLibrary;
+			sourceTree = "<group>";
+		};
+		5A48B5EF1FAA002600B256B4 /* DGElasticPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				5A48B5F01FAA002600B256B4 /* DGElasticPullToRefreshExtensions.swift */,
+				5A48B5F11FAA002600B256B4 /* DGElasticPullToRefreshLoadingView.swift */,
+				5A48B5F21FAA002600B256B4 /* DGElasticPullToRefreshLoadingViewCircle.swift */,
+				5A48B5F31FAA002600B256B4 /* DGElasticPullToRefreshView.swift */,
+			);
+			path = DGElasticPullToRefresh;
+			sourceTree = "<group>";
+		};
+		5A48B5F41FAA002600B256B4 /* InfiniteScroller */ = {
+			isa = PBXGroup;
+			children = (
+				5A48B5F51FAA002600B256B4 /* DGElasticPullToRefresh */,
+				5A48B5F61FAA002600B256B4 /* Extension.swift */,
+				5A48B5F71FAA002600B256B4 /* pulltorefresharrow.png */,
+				5A48B5F81FAA002600B256B4 /* PullToRefreshOption.swift */,
+				5A48B5F91FAA002600B256B4 /* PullToRefreshView.swift */,
+				5A48B5FA1FAA002600B256B4 /* UIScrollViewExtension.swift */,
+			);
+			path = InfiniteScroller;
+			sourceTree = "<group>";
+		};
+		5A48B5F51FAA002600B256B4 /* DGElasticPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DGElasticPullToRefresh;
+			sourceTree = "<group>";
+		};
+		5A50B7171FBDD5E200E2BCAC /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				5A50B7181FBDD61200E2BCAC /* ChangePasswordViewController.swift */,
+			);
+			path = ChangePassword;
+			sourceTree = "<group>";
+		};
+		5A53B33E1FA6FCA400DACF61 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				5A53B33F1FA6FCB700DACF61 /* ForgotPasswordViewController.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		5A53B3411FA7339A00DACF61 /* TermsService */ = {
+			isa = PBXGroup;
+			children = (
+				5A53B3421FA733AC00DACF61 /* TermsOfServiceViewController.swift */,
+			);
+			path = TermsService;
+			sourceTree = "<group>";
+		};
+		5A53B3591FA7628B00DACF61 /* Singlton */ = {
+			isa = PBXGroup;
+			children = (
+				5A8BDF4A1FA8BD64006EE115 /* LocationService.swift */,
+			);
+			path = Singlton;
+			sourceTree = "<group>";
+		};
+		5A53B36D1FA76C1F00DACF61 /* WSLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5A53B36E1FA76C1F00DACF61 /* Alamofire */,
+				5A53B3721FA76C1F00DACF61 /* AlamofireExtensions.swift */,
+				5A53B3731FA76C1F00DACF61 /* APIHelper.swift */,
+				5A53B3741FA76C1F00DACF61 /* APIs */,
+				5A53B3781FA76C1F00DACF61 /* NSIResponse.swift */,
+			);
+			path = WSLayer;
+			sourceTree = "<group>";
+		};
+		5A53B36E1FA76C1F00DACF61 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				5A53B36F1FA76C1F00DACF61 /* AlamofireCached.swift */,
+				5A53B3701FA76C1F00DACF61 /* AlamofireResponseWrapper.swift */,
+				5A53B3711FA76C1F00DACF61 /* RequestBuilder.swift */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		5A53B3741FA76C1F00DACF61 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				5A65225A1FA884CD004BE23E /* PropertyAPI.swift */,
+				5A53B3751FA76C1F00DACF61 /* AccessTokenAPI.swift */,
+				5A53B3771FA76C1F00DACF61 /* UserAPI.swift */,
+				5A53B3761FA76C1F00DACF61 /* ReuseableAPI */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		5A53B3761FA76C1F00DACF61 /* ReuseableAPI */ = {
+			isa = PBXGroup;
+			children = (
+				5A7C0EEC1FAC4AA200C16536 /* GooglePlacesAPI.swift */,
+			);
+			path = ReuseableAPI;
+			sourceTree = "<group>";
+		};
+		5A7C0EE91FAC4A4900C16536 /* ReuseableModel */ = {
+			isa = PBXGroup;
+			children = (
+				5A7C0EEA1FAC4A6700C16536 /* GoogleAutocompleteJsonModel.swift */,
+			);
+			path = ReuseableModel;
+			sourceTree = "<group>";
+		};
+		5A817EBE1FC6E270005D6E3B /* AmenitiesCell */ = {
+			isa = PBXGroup;
+			children = (
+				5A817EBF1FC6E33C005D6E3B /* AmenitiesCollectionViewCell.swift */,
+			);
+			path = AmenitiesCell;
+			sourceTree = "<group>";
+		};
+		5A817EC11FC6E60A005D6E3B /* Amenities */ = {
+			isa = PBXGroup;
+			children = (
+				5A817EC21FC6E62D005D6E3B /* AmenitiesTableViewCell.swift */,
+				5A817EC41FC6E645005D6E3B /* AmenitiesViewController.swift */,
+			);
+			path = Amenities;
+			sourceTree = "<group>";
+		};
+		5A8C9A171FBF2C0800F76901 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				5A8504721FA0BE000036BB9E /* AccessTokenModal.swift */,
+				5A85046E1FA0B9660036BB9E /* EmailToken.swift */,
+				5A6522601FA884EE004BE23E /* StaticPage.swift */,
+				5A2560B11FBC78A200DDBC45 /* User.swift */,
+				5A2560B31FBC7CCF00DDBC45 /* UserModel.swift */,
+				5A8C9A181FBF2C0800F76901 /* Password.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		5A99AD801FAAE74E00D8B99F /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				5A99AD811FAAE81300D8B99F /* CustomTabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		5AD4B65B1FA1A31900BF8BC9 /* LoaderCategory */ = {
+			isa = PBXGroup;
+			children = (
+				5AD4B65C1FA1A31900BF8BC9 /* UIImage+animatedGIF.h */,
+				5AD4B65D1FA1A31900BF8BC9 /* UIImage+animatedGIF.m */,
+			);
+			path = LoaderCategory;
+			sourceTree = "<group>";
+		};
+		5AE8D4CC1FA384660026D452 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				5AE8D4CF1FA3847D0026D452 /* HistoryViewController.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		5AE8D4CD1FA384660026D452 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5A50B7171FBDD5E200E2BCAC /* ChangePassword */,
+				5AE8D4D11FA3848F0026D452 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5AE8D4CE1FA384670026D452 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				5A3790F51FC82193004F826E /* Booking */,
+				5A3790F61FC82193004F826E /* DateConfirmation */,
+				5A3790F41FC82193004F826E /* Payment */,
+				5A817EC11FC6E60A005D6E3B /* Amenities */,
+				5A30C15D1FC577C100BDB339 /* PropertyDetail */,
+				5A364E011FB08B09000A6731 /* CalenderDates */,
+				5A4614D01FAB3A11005A71F0 /* SearchLocation */,
+				5AE8D4D31FA384A40026D452 /* SearchViewController.swift */,
+				5A80B8811FBD6A0F0066DFAB /* SearchView+TableViewExtension.swift */,
+				5A6522581FA86261004BE23E /* SearchCellTableViewCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		5AF601331F9DCCF8003B67F5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5AF6013E1F9DCD42003B67F5 /* LoginViewController.swift */,
+				5A509C871F9E10AF00F0DD3F /* LoginOptionViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5AF601341F9DCCF8003B67F5 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				5AF6013A1F9DCD24003B67F5 /* LaunchViewController.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		5AF601351F9DCCF8003B67F5 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				5AF601401F9DCD62003B67F5 /* SignUpEmailViewController.swift */,
+				5A298E0B1F9F60C0002CC583 /* SignUpVerifyViewController.swift */,
+				5A298E0D1F9F64FE002CC583 /* SignUpPasswordViewController.swift */,
+				5A298E0F1F9F651A002CC583 /* MemberInfoViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		5AF601361F9DCCF8003B67F5 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				5AF6013C1F9DCD34003B67F5 /* LanguageViewController.swift */,
+				5AF601421F9DE28F003B67F5 /* LanguageTableViewCell.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		A3DCA72CCEBBAEE4E80C1B1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D74197A9BB22C2876DCA4739 /* Pods-StayDream.debug.xcconfig */,
+				75A6C21F4A2E32BD35FD3268 /* Pods-StayDream.qc.xcconfig */,
+				1DB9999BA40060E84BB3F840 /* Pods-StayDream.development.xcconfig */,
+				D6AE0050D37C77CFED2A063F /* Pods-StayDream.staging.xcconfig */,
+				48C75143D192C3EF81B4BCD4 /* Pods-StayDream.production.xcconfig */,
+				04D00DDBCF6D8F290C3310B6 /* Pods-StayDreamTests.debug.xcconfig */,
+				02AC9E78ABFB3E600CFB6E96 /* Pods-StayDreamTests.qc.xcconfig */,
+				16305B0B030FCC86F7B3D1A2 /* Pods-StayDreamTests.development.xcconfig */,
+				E810008085ECD19DD8FE1123 /* Pods-StayDreamTests.staging.xcconfig */,
+				C2288D9510CD9AAADA647835 /* Pods-StayDreamTests.production.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A2C12B61F866AD500D395FD /* StayDream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A2C12D41F866AD500D395FD /* Build configuration list for PBXNativeTarget "StayDream" */;
+			buildPhases = (
+				B063EEBDD6620315ECF189B6 /* [CP] Check Pods Manifest.lock */,
+				5A2C12B31F866AD500D395FD /* Sources */,
+				5A2C12B41F866AD500D395FD /* Frameworks */,
+				5A2C12B51F866AD500D395FD /* Resources */,
+				A0B52571F15E267A0E84356E /* [CP] Embed Pods Frameworks */,
+				65E18AE5AE1DAAA7F91235C8 /* [CP] Copy Pods Resources */,
+				5A3B28351F87473C00ABFF14 /* swiftlint */,
+				5A3B28361F87475C00ABFF14 /* swiftgen */,
+				5A3B28371F87479600ABFF14 /* bartycrouch */,
+				5A80B8801FBD63E90066DFAB /* Fabric */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StayDream;
+			productName = DVH;
+			productReference = 5A2C12B71F866AD500D395FD /* StayDream.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A2C12CA1F866AD500D395FD /* StayDreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A2C12D71F866AD500D395FD /* Build configuration list for PBXNativeTarget "StayDreamTests" */;
+			buildPhases = (
+				8B575E0AE77C7BE440480F33 /* [CP] Check Pods Manifest.lock */,
+				5A2C12C71F866AD500D395FD /* Sources */,
+				5A2C12C81F866AD500D395FD /* Frameworks */,
+				5A2C12C91F866AD500D395FD /* Resources */,
+				74F72618DF255EEB666B9ED6 /* [CP] Embed Pods Frameworks */,
+				CF2F4DE1814B813972656A10 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A2C12CD1F866AD500D395FD /* PBXTargetDependency */,
+			);
+			name = StayDreamTests;
+			productName = DVHTests;
+			productReference = 5A2C12CB1F866AD500D395FD /* StayDreamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A2C12AF1F866AD500D395FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Netsolutions;
+				TargetAttributes = {
+					5A2C12B61F866AD500D395FD = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					5A2C12CA1F866AD500D395FD = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5A2C12B61F866AD500D395FD;
+					};
+				};
+			};
+			buildConfigurationList = 5A2C12B21F866AD500D395FD /* Build configuration list for PBXProject "StayDream" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = 5A2C12AE1F866AD500D395FD;
+			productRefGroup = 5A2C12B81F866AD500D395FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A2C12B61F866AD500D395FD /* StayDream */,
+				5A2C12CA1F866AD500D395FD /* StayDreamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A2C12B51F866AD500D395FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AD4437A1F973CDF00D4EF46 /* georgia_0.ttf in Resources */,
+				5AD4437B1F973CDF00D4EF46 /* tahoma_0.ttf in Resources */,
+				5AD4437C1F973CDF00D4EF46 /* tahoma_1.ttf in Resources */,
+				5A31EF331FB31942000F662B /* run-sonar-swift.sh in Resources */,
+				5AD4437D1F973CDF00D4EF46 /* tahomabd_0.ttf in Resources */,
+				5AD4437E1F973CDF00D4EF46 /* tahomabd_1.ttf in Resources */,
+				5A817EBD1FC6B513005D6E3B /* Amenities.plist in Resources */,
+				5A058C951F878C450047D229 /* Localizable.strings in Resources */,
+				5A2C12C51F866AD500D395FD /* LaunchScreen.storyboard in Resources */,
+				5A2C12FC1F866BC000D395FD /* Configuration.plist in Resources */,
+				5AD4B65A1FA19F8700BF8BC9 /* image_loader.gif in Resources */,
+				5A31EF341FB31944000F662B /* sonar-project.properties in Resources */,
+				5A2C12FB1F866BC000D395FD /* Assets.xcassets in Resources */,
+				5A31EF321FB3193E000F662B /* .swiftlint.yml in Resources */,
+				5A2C12C01F866AD500D395FD /* Main.storyboard in Resources */,
+				5A48B6001FAA002600B256B4 /* pulltorefresharrow.png in Resources */,
+				5A86A5111FA35F260056C3E9 /* Property.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A2C12C91F866AD500D395FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A3B28351F87473C00ABFF14 /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Swiftlint run script\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\nexit 1\nfi\n";
+		};
+		5A3B28361F87475C00ABFF14 /* swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = swiftgen;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n# Add font constant file from fonts folder\nswiftgen fonts -t swift3 \"$PROJECT_DIR/StayDream/Resources/Fonts\" -o \"$PROJECT_DIR/StayDream/Constants/FontConstant.swift\"\n# Add story board constant file\n\nswiftgen storyboards -t swift3 \"$PROJECT_DIR/StayDream/Storyboards\" -o \"$PROJECT_DIR/StayDream/Constants/StoryboardConstant.swift\"\n\nelse\necho \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi";
+		};
+		5A3B28371F87479600ABFF14 /* bartycrouch */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = bartycrouch;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "if which bartycrouch > /dev/null; then\n# Incrementally update all Storyboards/XIBs strings files\nbartycrouch interfaces -p \"$PROJECT_DIR\"\n\n# Add new keys to Localizable.strings files from NSLocalizedString in code\nbartycrouch code -p \"$PROJECT_DIR\" -l \"$PROJECT_DIR\" -a -s\nelse\necho \"warning: BartyCrouch not installed, download it from https://github.com/Flinesoft/BartyCrouch\"\nfi";
+		};
+		5A80B8801FBD63E90066DFAB /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 5345ec8f7a6d98639cb4a0f658f39c8263743155 bf2e731c9aeb2a424bc83d76e026f62a667e2acd88209397bbef71be3f7e9be0";
+		};
+		65E18AE5AE1DAAA7F91235C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StayDream/Pods-StayDream-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74F72618DF255EEB666B9ED6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StayDreamTests/Pods-StayDreamTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B575E0AE77C7BE440480F33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A0B52571F15E267A0E84356E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StayDream/Pods-StayDream-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B063EEBDD6620315ECF189B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF2F4DE1814B813972656A10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StayDreamTests/Pods-StayDreamTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A2C12B31F866AD500D395FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A53B37D1FA76C1F00DACF61 /* APIHelper.swift in Sources */,
+				5A65225B1FA884CD004BE23E /* PropertyAPI.swift in Sources */,
+				5A2C13241F866CF100D395FD /* AppConstants.swift in Sources */,
+				5A8C9A191FBF2C0900F76901 /* Password.swift in Sources */,
+				5A3B284D1F874AEA00ABFF14 /* KeychainWrapper.swift in Sources */,
+				5A48B5FB1FAA002600B256B4 /* DGElasticPullToRefreshExtensions.swift in Sources */,
+				5A2C13231F866CF100D395FD /* ViewControllerExtension.swift in Sources */,
+				5A53B37E1FA76C1F00DACF61 /* AccessTokenAPI.swift in Sources */,
+				5AF6013F1F9DCD42003B67F5 /* LoginViewController.swift in Sources */,
+				5A99AD821FAAE81300D8B99F /* CustomTabBarController.swift in Sources */,
+				5A2C12BD1F866AD500D395FD /* ViewController.swift in Sources */,
+				5A3B284C1F874AEA00ABFF14 /* KeychainItemAccessibility.swift in Sources */,
+				5A2C12FD1F866BC000D395FD /* AppUtility.swift in Sources */,
+				5A4614D41FAB3A11005A71F0 /* SearchLocationViewController.swift in Sources */,
+				5A2C13211F866CF100D395FD /* StringExtension.swift in Sources */,
+				5A85046F1FA0B9660036BB9E /* EmailToken.swift in Sources */,
+				5A6522611FA884EE004BE23E /* StaticPage.swift in Sources */,
+				5A058C9D1F87A0230047D229 /* FontConstant.swift in Sources */,
+				5AD4B65E1FA1A31900BF8BC9 /* UIImage+animatedGIF.m in Sources */,
+				5A2560B41FBC7CCF00DDBC45 /* UserModel.swift in Sources */,
+				5A53B37F1FA76C1F00DACF61 /* UserAPI.swift in Sources */,
+				5A7C0EEF1FAC4B0200C16536 /* GoogleAPIArrayExtension.swift in Sources */,
+				5A509C881F9E10AF00F0DD3F /* LoginOptionViewController.swift in Sources */,
+				5A3790FA1FC821C6004F826E /* BookingDetailViewController.swift in Sources */,
+				5A48B6051FAA005A00B256B4 /* ImageUtility.swift in Sources */,
+				5A48B5FD1FAA002600B256B4 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
+				5AE8D4D41FA384A40026D452 /* SearchViewController.swift in Sources */,
+				5A2C13021F866BDE00D395FD /* AppDelegate.swift in Sources */,
+				5AD443741F97248000D4EF46 /* StayDreamConfiguration.swift in Sources */,
+				5A53B37B1FA76C1F00DACF61 /* RequestBuilder.swift in Sources */,
+				5AE8D4D21FA3848F0026D452 /* ProfileViewController.swift in Sources */,
+				5A53B37C1FA76C1F00DACF61 /* AlamofireExtensions.swift in Sources */,
+				5A7C0EEB1FAC4A6700C16536 /* GoogleAutocompleteJsonModel.swift in Sources */,
+				5A2C13201F866CF100D395FD /* NSAttributedStringConcatenation.swift in Sources */,
+				5A48B5FF1FAA002600B256B4 /* Extension.swift in Sources */,
+				5A65225F1FA884EA004BE23E /* PropertyList.swift in Sources */,
+				5A53B3401FA6FCB700DACF61 /* ForgotPasswordViewController.swift in Sources */,
+				5A2C12FF1F866BC000D395FD /* Enums.swift in Sources */,
+				5A3790F81FC821A8004F826E /* DateConfirmationViewController.swift in Sources */,
+				5A298E0C1F9F60C0002CC583 /* SignUpVerifyViewController.swift in Sources */,
+				5AF601431F9DE28F003B67F5 /* LanguageTableViewCell.swift in Sources */,
+				5A2C13001F866BC000D395FD /* ServiceUtility.swift in Sources */,
+				5A30C15F1FC577F200BDB339 /* PropertyDetailViewController.swift in Sources */,
+				5A817EC31FC6E62D005D6E3B /* AmenitiesTableViewCell.swift in Sources */,
+				5A48B6031FAA002600B256B4 /* UIScrollViewExtension.swift in Sources */,
+				5A298E0A1F9F266C002CC583 /* TextFieldLeftImage.swift in Sources */,
+				5A65225D1FA884E3004BE23E /* Property.swift in Sources */,
+				5A298E101F9F651A002CC583 /* MemberInfoViewController.swift in Sources */,
+				5AE8D4D01FA3847D0026D452 /* HistoryViewController.swift in Sources */,
+				5AAE95D01FC70B6C0057B6AA /* PropertyDetail+Extension.swift in Sources */,
+				5A53B3791FA76C1F00DACF61 /* AlamofireCached.swift in Sources */,
+				5A4614D31FAB3A11005A71F0 /* SearchLocationTableViewCell.swift in Sources */,
+				5A48B5FE1FAA002600B256B4 /* DGElasticPullToRefreshView.swift in Sources */,
+				5A86B5C81FC406E30082A8F8 /* DIYCalendarCell.swift in Sources */,
+				5AF601411F9DCD62003B67F5 /* SignUpEmailViewController.swift in Sources */,
+				5A53B3431FA733AC00DACF61 /* TermsOfServiceViewController.swift in Sources */,
+				5A50B7191FBDD61200E2BCAC /* ChangePasswordViewController.swift in Sources */,
+				5A7C0EED1FAC4AA200C16536 /* GooglePlacesAPI.swift in Sources */,
+				5A8504731FA0BE000036BB9E /* AccessTokenModal.swift in Sources */,
+				5A80B8821FBD6A100066DFAB /* SearchView+TableViewExtension.swift in Sources */,
+				5A364E051FB0A422000A6731 /* Date.swift in Sources */,
+				5A8BDF4D1FA8D2AC006EE115 /* PropertyListing.swift in Sources */,
+				5A48B6021FAA002600B256B4 /* PullToRefreshView.swift in Sources */,
+				5AF8F0351F95D88B00A22C05 /* StoryboardConstant.swift in Sources */,
+				5A48B5EB1FA9F38900B256B4 /* FunctionalUtility.swift in Sources */,
+				5A3B284B1F874AEA00ABFF14 /* Toast.swift in Sources */,
+				5A3B28511F874B2900ABFF14 /* NSIError.swift in Sources */,
+				5A2C131F1F866CF100D395FD /* Extensions.swift in Sources */,
+				5AF6013B1F9DCD24003B67F5 /* LaunchViewController.swift in Sources */,
+				5A298E0E1F9F64FE002CC583 /* SignUpPasswordViewController.swift in Sources */,
+				5A6522591FA86261004BE23E /* SearchCellTableViewCell.swift in Sources */,
+				5A48B6011FAA002600B256B4 /* PullToRefreshOption.swift in Sources */,
+				5A817EC01FC6E33C005D6E3B /* AmenitiesCollectionViewCell.swift in Sources */,
+				5A817EC51FC6E645005D6E3B /* AmenitiesViewController.swift in Sources */,
+				5A2560B61FBC7EE700DDBC45 /* UserUtility.swift in Sources */,
+				5A364E031FB08B21000A6731 /* SelectDatesViewController.swift in Sources */,
+				5A53B37A1FA76C1F00DACF61 /* AlamofireResponseWrapper.swift in Sources */,
+				5AF6013D1F9DCD34003B67F5 /* LanguageViewController.swift in Sources */,
+				5A2C13221F866CF100D395FD /* UITextField+Extension.swift in Sources */,
+				5A2560B21FBC78A300DDBC45 /* User.swift in Sources */,
+				5A8BDF4B1FA8C740006EE115 /* LocationService.swift in Sources */,
+				5A53B3801FA76C1F00DACF61 /* NSIResponse.swift in Sources */,
+				5A48B5FC1FAA002600B256B4 /* DGElasticPullToRefreshLoadingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A2C12C71F866AD500D395FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A2C12CD1F866AD500D395FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A2C12B61F866AD500D395FD /* StayDream */;
+			targetProxy = 5A2C12CC1F866AD500D395FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A058C971F878C450047D229 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A058C961F878C450047D229 /* en */,
+				5A058C981F878C490047D229 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		5A2C12BE1F866AD500D395FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A2C12BF1F866AD500D395FD /* Base */,
+				5A058CA41F87AF6E0047D229 /* en */,
+				5A058CA61F87AF700047D229 /* fr */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A2C12C31F866AD500D395FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A2C12C41F866AD500D395FD /* Base */,
+				5A058C8F1F8789D20047D229 /* fr */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5A86A50F1FA35F250056C3E9 /* Property.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A86A5101FA35F250056C3E9 /* Base */,
+			);
+			name = Property.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A2C12D21F866AD500D395FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/StayDream/StayDream_Bridging_Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A2C12D51F866AD500D395FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74197A9BB22C2876DCA4739 /* Pods-StayDream.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95BDY2JP8T;
+				INFOPLIST_FILE = StayDream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netsolutions.containerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/StayDream/StayDream_Bridging_Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A2C12D81F866AD500D395FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04D00DDBCF6D8F290C3310B6 /* Pods-StayDreamTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DVHTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netsol.DVHTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StayDream.app/StayDream";
+			};
+			name = Debug;
+		};
+		5A3B28381F87480700ABFF14 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/StayDream/StayDream_Bridging_Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		5A3B28391F87480700ABFF14 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6AE0050D37C77CFED2A063F /* Pods-StayDream.staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95BDY2JP8T;
+				INFOPLIST_FILE = StayDream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netsolutions.containerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/StayDream/StayDream_Bridging_Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		5A3B283A1F87480700ABFF14 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E810008085ECD19DD8FE1123 /* Pods-StayDreamTests.staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DVHTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netsol.DVHTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StayDream.app/StayDream";
+			};
+			name = Staging;
+		};
+		5A3B283B1F87480F00ABFF14 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/StayDream/StayDream_Bridging_Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Development;
+		};
+		5A3B283C1F87480F00ABFF14 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DB9999BA40060E84BB3F840 /* Pods-StayDream.development.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95BDY2JP8T;
+				INFOPLIST_FILE = StayDream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netsolutions.containerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/StayDream/StayDream_Bridging_Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Development;
+		};
+		5A3B283D1F87480F00ABFF14 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16305B0B030FCC86F7B3D1A2 /* Pods-StayDreamTests.development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DVHTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netsol.DVHTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StayDream.app/StayDream";
+			};
+			name = Development;
+		};
+		5A3B283E1F87481B00ABFF14 /* QC */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/StayDream/StayDream_Bridging_Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = QC;
+		};
+		5A3B283F1F87481B00ABFF14 /* QC */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75A6C21F4A2E32BD35FD3268 /* Pods-StayDream.qc.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95BDY2JP8T;
+				INFOPLIST_FILE = StayDream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netsolutions.containerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/StayDream/StayDream_Bridging_Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = QC;
+		};
+		5A3B28401F87481B00ABFF14 /* QC */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02AC9E78ABFB3E600CFB6E96 /* Pods-StayDreamTests.qc.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DVHTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netsol.DVHTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StayDream.app/StayDream";
+			};
+			name = QC;
+		};
+		5A3B28411F87482600ABFF14 /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/StayDream/StayDream_Bridging_Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Production;
+		};
+		5A3B28421F87482600ABFF14 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48C75143D192C3EF81B4BCD4 /* Pods-StayDream.production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95BDY2JP8T;
+				INFOPLIST_FILE = StayDream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netsolutions.containerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/StayDream/StayDream_Bridging_Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Production;
+		};
+		5A3B28431F87482600ABFF14 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2288D9510CD9AAADA647835 /* Pods-StayDreamTests.production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DVHTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netsol.DVHTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StayDream.app/StayDream";
+			};
+			name = Production;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A2C12B21F866AD500D395FD /* Build configuration list for PBXProject "StayDream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A2C12D21F866AD500D395FD /* Debug */,
+				5A3B283E1F87481B00ABFF14 /* QC */,
+				5A3B283B1F87480F00ABFF14 /* Development */,
+				5A3B28381F87480700ABFF14 /* Staging */,
+				5A3B28411F87482600ABFF14 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5A2C12D41F866AD500D395FD /* Build configuration list for PBXNativeTarget "StayDream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A2C12D51F866AD500D395FD /* Debug */,
+				5A3B283F1F87481B00ABFF14 /* QC */,
+				5A3B283C1F87480F00ABFF14 /* Development */,
+				5A3B28391F87480700ABFF14 /* Staging */,
+				5A3B28421F87482600ABFF14 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5A2C12D71F866AD500D395FD /* Build configuration list for PBXNativeTarget "StayDreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A2C12D81F866AD500D395FD /* Debug */,
+				5A3B28401F87481B00ABFF14 /* QC */,
+				5A3B283D1F87480F00ABFF14 /* Development */,
+				5A3B283A1F87480700ABFF14 /* Staging */,
+				5A3B28431F87482600ABFF14 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A2C12AF1F866AD500D395FD /* Project object */;
+}

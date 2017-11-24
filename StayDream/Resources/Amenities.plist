@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+		<key>petsAllowedIndicator</key>
+		<string>Pets Allowed</string>
+		<key>elevatorIndicator</key>
+		<string>Elevator</string>
+		<key>smokingAllowedIndicator</key>
+		<string>Smoking Allowed</string>
+		<key>indoorFireplaceIndicator</key>
+		<string>Indoor Fireplace</string>
+		<key>wirelessInternetIndicator</key>
+		<string>Wireless Internet</string>
+		<key>kitchenIndicator</key>
+		<string>Kitchen</string>
+		<key>cableTvIndicator</key>
+		<string>Cable TV</string>
+		<key>iptvIndicator</key>
+		<string>IPTV</string>
+		<key>hotTubIndicator</key>
+		<string>Hot Tub</string>
+		<key>gymIndicator</key>
+		<string>Gym</string>
+		<key>poolIndicator</key>
+		<string>Pool</string>
+		<key>tvIndicator</key>
+		<string>TV</string>
+		<key>ironIndicator</key>
+		<string>Iron</string>
+		<key>dryerIndicator</key>
+		<string>Dryer</string>
+		<key>washerIndicator</key>
+		<string>Washer</string>
+		<key>hangersIndicator</key>
+		<string>Hanger</string>
+		<key>hairDryerIndicator</key>
+		<string>Hair Dryer</string>
+		<key>essentialsIndicator</key>
+		<string>Essentials</string>
+		<key>shampooIndicator</key>
+		<string>Shampoo</string>
+		<key>heatingIndicator</key>
+		<string>Heating</string>
+		<key>airConditioningIndicator</key>
+		<string>Air Conditioning</string>
+		<key>bathtubIndicator</key>
+		<string>Bathtub</string>
+		<key>cribIndicator</key>
+		<string>Crib</string>
+		<key>highChairIndicator</key>
+		<string>High Chair</string>
+		<key>smokeDetectorIndicator</key>
+		<string>Smoke Detector</string>
+		<key>carbonMonoxideDetectorIndicator</key>
+		<string>Carbon Monoxide Detector</string>
+		<key>firstAidKitIndicator</key>
+		<string>First Aid Kit</string>
+		<key>airPurifierIndicator</key>
+		<string>Air Purifier</string>
+
+</dict>
+</plist>

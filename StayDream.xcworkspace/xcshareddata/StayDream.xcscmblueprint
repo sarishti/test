@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "c91fc0a1-89c0-424b-b151-cd728a170ad4++1672",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "c91fc0a1-89c0-424b-b151-cd728a170ad4++1672" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "c91fc0a1-89c0-424b-b151-cd728a170ad4++1672" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B972BA38-2374-4336-9E4B-FB401BDD1D92",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "c91fc0a1-89c0-424b-b151-cd728a170ad4++1672" : "DVHLatestSVN\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "StayDream",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOS\/StayDream\/StayDream.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.1.35\/repos\/DVH-MOBILITY",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "c91fc0a1-89c0-424b-b151-cd728a170ad4++1672"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+
+/* The name of the app to display in a navigation bar along with a placeholder for the SDK version number */
+"App.NameAndVersion" = "Places Demos: %1$@";
+
+/* Prompt to enter text for autocomplete demo */
+"Demo.Content.Autocomplete.EnterTextPrompt" = "Enter Autocomplete Text Here";
+
+/* Format string for 'autocomplete failed with error' message */
+"Demo.Content.Autocomplete.FailedErrorMessage" = "Autocomplete failed with error: %1$@";
+
+/* Button title for 'show autocomplete widget' */
+"Demo.Content.Autocomplete.ShowWidgetButton" = "Show Autocomplete Widget";
+
+/* Button title for the 'BlueColors' styled autocomplete widget. */
+"Demo.Content.Autocomplete.Styling.Colors.BlueColors" = "Blue Colors";
+
+/* Button title for the 'Hot Dog Stand' styled autocomplete widget. */
+"Demo.Content.Autocomplete.Styling.Colors.HotDogStand" = "Hot Dog Stand";
+
+/* Button title for the 'WhiteOnBlack' styled autocomplete widget. */
+"Demo.Content.Autocomplete.Styling.Colors.WhiteOnBlack" = "White on Black";
+
+/* Button title for the 'Yellow and Brown' styled autocomplete widget. */
+"Demo.Content.Autocomplete.Styling.Colors.YellowAndBrown" = "Yellow and Brown";
+
+/* String for 'autocomplete canceled message' */
+"Demo.Content.Autocomplete.WasCanceledMessage" = "Autocomplete was canceled";
+
+/* Button title for the 'Modal' view of the place picker. */
+"Demo.Content.PlacePicker.ViewController.Modal" = "Modal";
+
+/* Button title for the 'Navigation' view of the place picker. */
+"Demo.Content.PlacePicker.ViewController.Navigation" = "Navigation";
+
+/* Button title for the 'Popover' view of the place picker. */
+"Demo.Content.PlacePicker.ViewController.Popover" = "Popover";
+
+/* Title of the autocomplete demo section */
+"Demo.Section.Title.Autocomplete" = "Autocomplete";
+
+/* Title of the 'Programmatic' demo section */
+"Demo.Section.Title.Programmatic" = "Programmatic APIs";
+
+/* Title of the full-screen autocomplete demo for display in a list or nav header */
+"Demo.Title.Autocomplete.FullScreen" = "Full-Screen Autocomplete";
+
+/* Title of the pushed autocomplete demo for display in a list or nav header */
+"Demo.Title.Autocomplete.Push" = "Push Autocomplete";
+
+/* Title of the Styling autocomplete demo for display in a list or nav header */
+"Demo.Title.Autocomplete.Styling" = "Custom Autocomplete Styling";
+
+/* Title of the UISearchController autocomplete demo for display in a list or nav header */
+"Demo.Title.Autocomplete.UISearchController" = "UISearchController";
+
+/* Title of the UISearchDisplayController autocomplete demo for display in a list or nav header */
+"Demo.Title.Autocomplete.UISearchDisplayController" = "UISearchDisplayController";
+
+/* Title of the UITextField autocomplete demo for display in a list or nav header */
+"Demo.Title.Autocomplete.UITextField" = "UITextField";
+
+/* Title of the photos demo for display in a list or nav header */
+"Demo.Title.Photos" = "Photos";
+
+/* Title of the 'select place' button within the photos demo */
+"Demo.Title.Photos.SelectPlace" = "Select Place";
+
+/* Title of the Place Picker demo for displaying the picker in a popover, navigation controller, or modally. */
+"Demo.Title.PlacePicker.ViewController" = "Place Picker View Controller";
+
+/* No comment provided by engineer. */
+"%1$@ could not be parsed because an invalid JSON dictionary was provided for key path \"%2$@\"" = "";
+
+/* No comment provided by engineer. */
+"%1$@ could not be parsed because its entity attribute mapping contains illegal property keys." = "";
+
+/* No comment provided by engineer. */
+"%@ could not be created because an invalid JSON array was provided: %@" = "";
+
+/* No comment provided by engineer. */
+"%@ could not be created because an invalid JSON dictionary was provided: %@" = "";
+
+/* No comment provided by engineer. */
+"'body' can not be nil" = "";
+
+/* No comment provided by engineer. */
+"'bucket' name can not be empty" = "";
+
+/* No comment provided by engineer. */
+"'key' name can not be empty" = "";
+
+/* Back */
+"Back" = "";
+
+/* No comment provided by engineer. */
+"can not continue to download a cancelled task." = "";
+
+/* No comment provided by engineer. */
+"can not continue to download a completed task" = "";
+
+/* No comment provided by engineer. */
+"can not continue to upload a cancelled task." = "";
+
+/* No comment provided by engineer. */
+"can not continue to upload a completed task" = "";
+
+/* No comment provided by engineer. */
+"Can not pause a cancelled task." = "";
+
+/* No comment provided by engineer. */
+"Can not pause a completed task." = "";
+
+/* No comment provided by engineer. */
+"Could not deserialize managed object" = "";
+
+/* No comment provided by engineer. */
+"Could not parse JSON" = "";
+
+/* No comment provided by engineer. */
+"Could not serialize managed object" = "";
+
+/* No comment provided by engineer. */
+"failed to convert data to string" = "";
+
+/* No comment provided by engineer. */
+"failed to convert string to data" = "";
+
+/* No comment provided by engineer. */
+"Failed to fetch a managed object for uniqing predicate \"%@\"." = "";
+
+/* No comment provided by engineer. */
+"Failed to initialize a managed object from entity named \"%@\"." = "";
+
+/* No comment provided by engineer. */
+"Invalid 'body' Type, must be an instance of NSURL Class" = "";
+
+/* No comment provided by engineer. */
+"Invalid entity attribute mapping" = "";
+
+/* No comment provided by engineer. */
+"Invalid JSON dictionary" = "";
+
+/* No comment provided by engineer. */
+"Loading" = "";
+
+/* Maps SDK Demos */
+"Maps SDK Demos" = "";
+
+/* No comment provided by engineer. */
+"Missing JSON array" = "";
+
+/* No comment provided by engineer. */
+"Missing JSON dictionary" = "";
+
+/* No comment provided by engineer. */
+"No model class could be found to deserialize the object." = "";
+
+/* No comment provided by engineer. */
+"No model class could be found to parse the JSON dictionary." = "";
+
+/* No comment provided by engineer. */
+"No property by name \"%@\" exists on the entity." = "";
+
+/* No comment provided by engineer. */
+"Property descriptions of class %@ are unsupported." = "";
+
+/* No comment provided by engineer. */
+"Property of class %@ cannot be encoded into a to-many relationship." = "";
+
+/* No comment provided by engineer. */
+"Property of class %@ cannot be encoded into an NSManagedObject." = "";
+
+/* No comment provided by engineer. */
+"S3 MultipartUpload has been cancelled." = "";
+
+/* No comment provided by engineer. */
+"S3 MultipartUpload has been paused." = "";
+
+/* Samples */
+"Samples" = "";
+
+/* No comment provided by engineer. */
+"the key must not to be nil" = "";
+
+/* No comment provided by engineer. */
+"the server property must not to be nil, should use 'keyChainStoreWithServer:protocolType:' initializer to instantiate keychain store" = "";
+
+/* No comment provided by engineer. */
+"Unexpected error has occurred." = "";

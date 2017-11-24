@@ -1,0 +1,6 @@
+framework module Pods_StayDreamTests {
+  umbrella header "Pods-StayDreamTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,73 @@
+PODS:
+  - Alamofire (4.5.1)
+  - AwesomeCache (5.0)
+  - AWSCore (2.6.2)
+  - AWSS3 (2.6.2):
+    - AWSCore (= 2.6.2)
+  - BartyCrouch (3.8.1)
+  - Cosmos (12.0.1)
+  - Crashlytics (3.8.6):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.13)
+  - FSCalendar (2.7.9)
+  - GoogleMaps (2.4.0):
+    - GoogleMaps/Maps (= 2.4.0)
+  - GoogleMaps/Base (2.4.0)
+  - GoogleMaps/Maps (2.4.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.4.0):
+    - GoogleMaps/Base (= 2.4.0)
+  - IQKeyboardManagerSwift (5.0.3)
+  - MBProgressHUD (1.0.0)
+  - ObjectMapper (3.0.0)
+  - SVProgressHUD (2.2.1)
+  - SwiftValidator (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AwesomeCache
+  - AWSS3
+  - BartyCrouch
+  - Cosmos
+  - Crashlytics
+  - Fabric
+  - FSCalendar
+  - GoogleMaps
+  - GooglePlaces
+  - IQKeyboardManagerSwift
+  - MBProgressHUD
+  - ObjectMapper
+  - SVProgressHUD
+  - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  SwiftValidator:
+    :branch: master
+    :git: https://github.com/jpotts18/SwiftValidator.git
+
+CHECKOUT OPTIONS:
+  SwiftValidator:
+    :commit: 6cff6cac3e02a617f7cf11323e18526a117d5673
+    :git: https://github.com/jpotts18/SwiftValidator.git
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AwesomeCache: d8906955242173357caa0be0214d5e77dec32cc5
+  AWSCore: 8f458961a4967be219162108f5be7df1c935639a
+  AWSS3: b3e2c4aca868cae06b5b88337ceabee25709fcc5
+  BartyCrouch: 7a57b80f80c94deb1db99942eebf14f9fad927fe
+  Cosmos: 4a9f57998a08788a1062c7b8eefbc62d2b590f39
+  Crashlytics: 95d05f4e4c19a771250c4bd9ce344d996de32bbf
+  Fabric: 2fb5676bc811af011a04513451f463dac6803206
+  FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
+  GoogleMaps: 8436ab5d1c25e36915b2f7416d0c8e3fa2e76c61
+  GooglePlaces: aafe5990fa7951e98e078761bbdaaf236d7e0c65
+  IQKeyboardManagerSwift: e257e513744cf32123eca7061272acea0246fc83
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
+  SVProgressHUD: db27c54e6e18bc903341661fc9feb55e04905cc4
+  SwiftValidator: 25ded5ca1f10c05adf57f6ac82a72d28ac8d91af
+
+PODFILE CHECKSUM: 1333e974ee8947606268be2cffdda5601a02ad32
+
+COCOAPODS: 1.1.1
